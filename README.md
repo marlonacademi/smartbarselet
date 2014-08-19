@@ -6,24 +6,9 @@ crie um banco  e rode o sql
 
 2) criar v-host no apache;
  vá na pasta do apache abra o httpd.conf no final do arquivo coloque.
-<pre>
-<?
-<VirtualHost smartbraselet.com.br:85>
-    ServerAdmin marlon.academi@gmail.com
-    DocumentRoot "E:/smartbraselet/"
-    ServerName smartbraselet.com.br
-    ErrorLog "E:/smartbraselet/error_log"
-    CustomLog "E:/smartbraselet/access_log" combined
-    <directory "E:/smartbraselet/">
-        Options Indexes FollowSymLinks
-        AllowOverride All
-        Order allow,deny
-        Allow from all
-        Require all granted
-    </directory>
-</VirtualHost>
-?>
-</pre>
+<code>
+&lt;VirtualHost smartbraselet.com.br:85&gt; ServerAdmin marlon.academi@gmail.com DocumentRoot &quot;E:/smartbraselet/&quot; ServerName loja1.shopitos.com.br ErrorLog &quot;E:/smartbraselet/error_log&quot; CustomLog &quot;E:/smartbraselet/access_log&quot; combined &lt;directory &quot;E:/smartbraselet/&quot;&gt; Options Indexes FollowSymLinks AllowOverride All Order allow,deny Allow from all Require all granted &lt;/directory&gt; &lt;/VirtualHost&gt;
+</code>
 linhas:
 1° linha nome do virtual host caso for diferente troque tambem no config do app.
 3° Lugar aonde vc baixou o sistema 
