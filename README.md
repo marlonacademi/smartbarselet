@@ -93,3 +93,14 @@ class Config {
 
 
 altere as variaveis do banco na variavel dir coloque o nome do host que vc colocou no arquivo de configuraçõ do apache no DIR 
+E acho que é só.
+
+Qualquer coisa estou a disposição.
+
+Se vcs chegaram aqui eu presumo que vc tenha o git bash instalado caso ao contrario instalem.
+
+Então abram o git bash terminal e escrevam git pull origin Marlon
+
+isso ira atualizar seu sistema .
+
+Caso vcs queiram fazer alguma alteração estudem um pouco o git e  criem uma brach nova no caso quando vcs baixam o o sistema ela vem com a brench Marlon para criar uma nova usa-se git checkout -b nome da branch então existe uma copia da branch na sua maquina apatir dai vcs podem fazer qualquer coisa no sistema. Depois de terem feito as mudanças e terem testadas todas me falem e me mandem o nome da branch e eu faço o merge da branch.
