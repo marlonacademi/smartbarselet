@@ -6,7 +6,7 @@ crie um banco  e rode o sql
 
 2) criar v-host no apache;
  vá na pasta do apache abra o httpd.conf no final do arquivo coloque.
-
+<pre>
 <VirtualHost smartbraselet.com.br:85>
     ServerAdmin marlon.academi@gmail.com
     DocumentRoot "E:/smartbraselet/"
@@ -21,6 +21,7 @@ crie um banco  e rode o sql
         Require all granted
     </directory>
 </VirtualHost>
+</pre>
 linhas:
 1° linha nome do virtual host caso for diferente troque tambem no config do app.
 3° Lugar aonde vc baixou o sistema 
@@ -29,7 +30,7 @@ linhas:
 
 depois vá em  C:\WINDOWS\system32\drivers\etc\ e abara o host com blocos de notas em modo administrador caso contrario vcs não consiguiram alterar o arquivo.
 
-na ultima linha acrecente 
+na ultima linha acrescente 
 
 127.0.0.1     smartbraselet.com.br
 
