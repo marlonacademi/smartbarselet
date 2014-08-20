@@ -18,7 +18,7 @@ class Config {
 		define('JS', DIR.'/app/templates/default/js/');
 		define('CSS', DIR.'/app/templates/default/css/');
 		define('FONT', DIR.'/app/templates/default/fonts/');
-
+		define('IMG', DIR.'/app/templates/default/img/');
 
 		//database details ONLY NEEDED IF USING A DATABASE
 		define('DB_TYPE','mysql');
