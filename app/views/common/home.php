@@ -19,5 +19,6 @@
             <li>
                <a href="cadastar_cliente"><img src="<?php echo IMG ?>addCustomers.png"/></a>
             </li>
+			Lezinha
         </ul>
     </section>
