@@ -584,6 +584,7 @@ ol ol {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+  padding: 5px 15px 15px 15px;
 }
 .list-inline {
   padding-left: 0;

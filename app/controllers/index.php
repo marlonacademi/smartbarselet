@@ -9,7 +9,8 @@
 			$data['script'] 	   = array('apprise-v2.js','verificaTag.js');
 			$data['style']		   = array('apprise-v2.css');
 			View::rendertemplate('header',$data);
-			View::render('common/home',$data);
+			//View::render('common/home',$data);
+			View::render('index/view_home',$data);
 			View::rendertemplate('footer',$data);
 		}
 	}

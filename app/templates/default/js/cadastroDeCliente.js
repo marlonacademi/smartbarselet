@@ -16,7 +16,7 @@ $(document).ready(function(){
     $('.cpfCliente').blur(function(){
         var cpf = $(this).val();
         $.ajax({
-                url:'../Controllers/cadastroClienteController.class.php?chave=cpf',
+                url:'clientes_cadastrar/cpf?chave=cpf',
                 type:'POST',
                 data:"cpf="+cpf,
                 datatype: 'json',
@@ -25,8 +25,7 @@ $(document).ready(function(){
                 },
                 success: function(data)
                 {
-                     var ob = JSON.parse(data);
-                     if (ob[0].retorno == "true"){
+                     if (data){
                          $('.txtNomeCliente').val(ob[1].nome);
                          $('.txtEnderecoCliente').val(ob[2].endereco);
                          $('.txtTelefoneCliente').val(ob[3].telefone);

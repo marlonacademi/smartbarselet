@@ -6,7 +6,8 @@
 body{
     padding: 0;
     margin: 0;
-    background: #3d3d3d;
+    #background: #3d3d3d;
+	background:url(../img/fundo2.png);
 }
 #wrapper{
     margin: 0 auto;
@@ -32,7 +33,7 @@ body{
 /*Inicia css sistema pagina inicial*/
 
 .inicia{
-    background: #fff;
+    background: #1C1C1C;
     float: left;
     position:absolute;
     left:25%;
@@ -42,8 +43,9 @@ body{
     display: none;
 }
 header{
+	height: 100px;
     width: 100%;
-    background-image:url(../img/background-heades.png);
+    background-image:url(../img/fundo_cabe.png);
     background-repeat: repeat-x;
     float: left;
     display: table;
@@ -54,7 +56,7 @@ header{
     margin: 15px 20px;
 }
 .logoff{
-     margin: 5px 85%;
+     margin: 4px 85%;
      cursor: pointer;
 }
 header nav{
@@ -78,8 +80,11 @@ header nav ul li{
     margin-top: 3px;
     margin-left: -7px;
 }
-.last{
-    border-right: solid 0px #646464;
+#.last{
+    #border-right: solid 0px #646464;
+#}
+.botoes_apoio {
+	position: 5px 20px 5px 15px;
 }
 nav ul li:last-child{
     padding: 5px 25px;
@@ -116,8 +121,8 @@ header nav ul li div a:hover{
 
 /*css conteudo*/
 .conteudo{
-   background: #fff;
-    background-image: url("../img/sobra-menu-bootom.png");
+   background: #E8E8E8;
+   background-image: url("../img/sobra-menu-bootom.png");
     background-position-y:0px;
     background-repeat: no-repeat;
     padding-top: 20px;
@@ -135,24 +140,24 @@ header nav ul li div a:hover{
     margin: 0 auto;
     width: 750px;
     border: solid 1px #d7d7d7;
-   padding: 15px 10px 15px 10px;
+   padding: 15px 10px 15px 50px;
    margin-bottom: 15px;
 }
 .conteudoMesmo .home li{
-    margin: 5px 10px;
-    width: 150px;
-    height: 150px;
-    background: #fbfbfb; /* Old browsers */
-    background: -moz-linear-gradient(top, #fbfbfb 0%, #f2f2f2 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #fbfbfb 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #fbfbfb 0%,#f2f2f2 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #fbfbfb 0%,#f2f2f2 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #fbfbfb 0%,#f2f2f2 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
-    border: solid 1px #d5d5d5;
-    box-shadow: 0px 0px 5px #3d3d3d;
-    cursor: pointer;
+    margin: 20px 20px;
+    width: 140px;
+    height: 140px;
+    --background: #fbfbfb; /* Old browsers */
+   -- background: -moz-linear-gradient(top, #fbfbfb 0%, #f2f2f2 100%); /* FF3.6+ */
+    --background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+    --background: -webkit-linear-gradient(top, #fbfbfb 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+    --background: -o-linear-gradient(top, #fbfbfb 0%,#f2f2f2 100%); /* Opera 11.10+ */
+    -background: -ms-linear-gradient(top, #fbfbfb 0%,#f2f2f2 100%); /* IE10+ */
+    --background: linear-gradient(to bottom, #fbfbfb 0%,#f2f2f2 100%); /* W3C */
+    --filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+    --border: solid 1px #d5d5d5;
+   -- box-shadow: 0px 0px 5px #3d3d3d;
+    --cursor: pointer;
 }
 
 

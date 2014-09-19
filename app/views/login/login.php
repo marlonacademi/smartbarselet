@@ -32,6 +32,7 @@ Descrição: Sistema de gerenceimento de casa noturna com integramento NFC. Feit
                         <input type="password" name="senha" class="form-control" id="senha" placeholder="Password">
                     </div>
                     <button type="button" class="btn btn-default logar">Logar</button>
+					
                 </form>
             </div>
         </div>

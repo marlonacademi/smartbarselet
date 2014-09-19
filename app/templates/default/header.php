@@ -30,19 +30,23 @@
         <div id="wrapper" class="inicia">
             <header>
                 <div class="logo">
-                    <a href="/index"><img src="<?php echo IMG; ?>logo.png"/></a>
+                    <a href="/index"><img src="<?php echo IMG; ?>MinilogoSB.png"/></a>
                 </div>
                 <div class="logoff">
-                    <img src="<?php echo IMG; ?>logoff.png"/>
+                    Divi logof
                 </div>
                 <nav>
                     <ul class="list-unstyled">
-                        <li><div><a href="/index">Home</a></div></li>
-                            <li><div>teste</div></li>
-                            <li><div>teste</div></li>
-                            <li><div>teste</div></li>
-                            <li class="last"><div>teste</div></li>  
-                            <li><div><a href="http://localhost/projects/TG/Desenvolvimento/View/my_account">My account</a></div></li>
+                        
+							<li><div><a href="/index"><img src="<?php echo IMG; ?>icone_home.png"/></a></div></li>
+							<li><div><a href="/index"><img src="<?php echo IMG; ?>icone_conf.png"/><a></div></li>
+							<li><div><a href="/index"><img src="<?php echo IMG; ?>icone_info.png"/></a></div></li>
+							<li><div><a href="/"><img src="<?php echo IMG; ?>icone_sair.png"/></a></div></li>
+							
+						
+                            <!--<li class="last"><div></div></li> 
+							<li><div><a href="http://localhost/projects/TG/Desenvolvimento/View/my_account">My account</a></div></li> -->
+
                     </ul>
                 </nav>
             </header>

@@ -62,7 +62,26 @@ use \core\router as Router,
 Router::any('', '\controllers\login@index');
 Router::any('login', '\controllers\login@validateLogin');
 Router::any('index', '\controllers\index@index');
+Router::any('lele', '\controllers\lele@index');
+Router::any('teste', '\controllers\teste@index');
 
+//Add por Leticia:
+//MENU CLIENTES
+Router::any('menu_clientes', '\controllers\menu_clientes@index');
+	Router::any('clientes_cadastrar', '\controllers\clientesCadastrar@index');
+	Router::any('clientes_pesquisar', '\controllers\clientesPesquisar@index');
+//MENU COMANDAS
+Router::any('menu_comandas', '\controllers\menu_comandas@index');
+//MENU PEDIDOS
+Router::any('menu_pedidos', '\controllers\menu_pedidos@index');
+//MENU PRODUTOS
+Router::any('menu_produtos', '\controllers\menu_produtos@index');
+//MENU FUNCIONARIOS
+Router::any('menu_funcionarios', '\controllers\menu_funcionarios@index');
+//MENU SISTEMA
+Router::any('menu_sistema', '\controllers\menu_sistema@index');
+
+	
 //if no route found
 Router::error('\core\error@index');
 
