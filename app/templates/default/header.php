@@ -1,53 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title><?php echo $data['title'].' - '.SITETITLE; //SITETITLE defined in index.php?></title>
-		<script src="<?php echo JS; ?>jquery-1.11.0.min.js"></script>
+    <meta charset="utf-8">
+    <title><?php echo $data['title'].' - '.SITETITLE; //SITETITLE defined in index.php?></title>
+        <script src="<?php echo JS; ?>jquery-1.11.0.min.js"></script>
         <script src="<?php echo JS; ?>jquery-ui.js"></script>
         <script src="<?php echo JS; ?>bootstrap.js"></script>
         <script src="<?php echo JS; ?>inicio-sistema.js"></script> 
         <?php if ($data['script']){ 
-        			foreach ($data['script'] as  $value) {
-        				echo '<script src="'.JS.$value.'"></script> ';
-        			}
-        		}
-		?>
+                    foreach ($data['script'] as  $value) {
+                        echo '<script src="'.JS.$value.'"></script> ';
+                    }
+                }
+        ?>
         <link href="<?php echo CSS; ?>bootstrap.css" rel="stylesheet"/>
         <link href="<?php echo CSS; ?>bootstrap-theme.css" rel="stylesheet"/>
         <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="<?php echo CSS; ?>css.css"/>
         <?php 
-        		if ($data['style']){
-        			foreach ($data['style'] as $value) {
-        				echo '<link href="'.CSS.$value.'" rel="stylesheet"/>';
-        			}
-        		}
+                if ($data['style']){
+                    foreach ($data['style'] as $value) {
+                        echo '<link href="'.CSS.$value.'" rel="stylesheet"/>';
+                    }
+                }
          ?>
 </head>
 <body>
-<div class="tagid"><?php echo $data['idFuncionario']?></div>
         <div id="wrapper" class="inicia">
-            <header>
-                <div class="logo">
-                    <a href="/index"><img src="<?php echo IMG; ?>MinilogoSB.png"/></a>
-                </div>
-                <div class="logoff">
-                    Divi logof
-                </div>
-                <nav>
-                    <ul class="list-unstyled">
-                        
-							<li><div><a href="/index"><img src="<?php echo IMG; ?>icone_home.png"/></a></div></li>
-							<li><div><a href="/index"><img src="<?php echo IMG; ?>icone_conf.png"/><a></div></li>
-							<li><div><a href="/index"><img src="<?php echo IMG; ?>icone_info.png"/></a></div></li>
-							<li><div><a href="/"><img src="<?php echo IMG; ?>icone_sair.png"/></a></div></li>
-							
-						
-                            <!--<li class="last"><div></div></li> 
-							<li><div><a href="http://localhost/projects/TG/Desenvolvimento/View/my_account">My account</a></div></li> -->
+    <!-- TOPO -->
+    <header>
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class='logo'>
+            <a href="/index"><img src="<?php echo IMG; ?>MinilogoSB.png"/></a>
+        </div>
+    </div>
+    <!-- /.MENU DROPOWN -->
+      
+    <ul class="menu">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/index">Clientes</a>
+                <ul class="sub-item">
+                        <li><a href="/cadastrar_clientes">Cadastrar</a></li>
+                        <li><a href="/pesquisar_clientes">Pesquisar</a></li>
+                </ul>
+            </li>
+            <li><a href="/index">Comandas</a>
+                <ul class="sub-item">
+                        <li><a href="/associar_comandas">Associar Comanda</a></li>
+                        <li><a href="/carregar_comandas">Carregar Comanda pré-paga</a></li>                   
+                </ul>
+            </li>
+            <li><a href="/index">Pedido</a>
+                <ul>
+                        <li><a href="/incluir_pedidos">Incluir Pedido</a></li>
+                        <li><a href="/editar_pedidos">Editar Pedido</a></li>                  
+                </ul>
+            </li>
+            <li><a href="/index">Produto</a>
+                <ul>
+                        <li><a href="/incluir_produtos">Incluir Produto</a></li>
+                        <li><a href="/editar_produtos">Editar Produto</a></li>
+                        <li><a href="/listar_produtos">Listar Produto</a></li>                 
+                </ul>
+            </li>
+            <li><a href="/index">Funcionário</a>
+                <ul>
+                        <li><a href="/incluir_funcionarios">Incluir Funcionário</a></li>
+                        <li><a href="/editar_funionarios">Editar Funcionário</a></li>                    
+                </ul>
+            </li>
+            <li><a href="/index">Parâmetros Gerais</a>
+                <ul>
+                        <li><a href="/parametrizacao">Parametrização</a></li>                   
+                </ul>
+            </li>
+            <li><a href="/index">Grupos</a>
+                <ul>
+                        <li><a href="/cadastrar_grupo">Cadastrar Grupo</a></li>
+                        <li><a href="/permissoes-grupo">Permissões de Grupo</a></li>                    
+                </ul>
+            </li>
+        <li><a href="/index">Fotos</a></li>
+        <li><a href="/index"><img src="<?php echo IMG; ?>sair.png"/></a></li>  
+               
+    </ul>
 
-                    </ul>
-                </nav>
-            </header>
-            <div class="conteudo">
+
+    <!-- /.MENU DROPDOWN -->
+    </nav>
+    </header>
+    <!-- TOPO FIM -->
+
+    <!-- /.MENU LATERAL -->
+    <div class="btn-group-vertical navbar-fixed-left">
+        <h3 class="fonteMenu">Principais Operações</h3>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Cadastrar Clientes</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Associar Comanda</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Consultar Saldo Comanda</button>
+        </div>
+         <div class="btn-group">
+            <button type="button" class="btn btn-default">Carregar Comanda</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Fazer Pedido</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Fechamento de Comanda</button>
+        </div>
+    </div>
+    <!-- /.MENU LATERAL FIM -->
+    
+            <div class="conteudo"> 

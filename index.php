@@ -68,10 +68,11 @@ Router::any('teste', '\controllers\teste@index');
 //Add por Leticia:
 //MENU CLIENTES
 Router::any('menu_clientes', '\controllers\menu_clientes@index');
-	Router::any('clientes_cadastrar', '\controllers\clientesCadastrar@index');
-	Router::any('clientes_pesquisar', '\controllers\clientesPesquisar@index');
+	Router::any('cadastrar_clientes', '\controllers\cadastrar_clientes@index');
+	Router::any('pesquisar_clientes', '\controllers\pesquisar_clientes@index');
 //MENU COMANDAS
 Router::any('menu_comandas', '\controllers\menu_comandas@index');
+	Router::any('associar_comandas', '\controllers\associar_comandas@index');
 //MENU PEDIDOS
 Router::any('menu_pedidos', '\controllers\menu_pedidos@index');
 //MENU PRODUTOS

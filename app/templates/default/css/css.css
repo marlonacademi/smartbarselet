@@ -7,12 +7,12 @@ body{
     padding: 0;
     margin: 0;
     #background: #3d3d3d;
-	background:url(../img/fundo2.png);
+	/*background:url(../img/fundo2.png);*/
 }
 #wrapper{
     margin: 0 auto;
     padding: 0;
-    width: 800px;
+    width: 100%;
     font-family: 'Duru Sans', sans-serif;
 
 }
@@ -30,13 +30,27 @@ body{
     border: #cecece solid 2px;
     display: none;
 }
+#conteudo {
+    border-left: 1px solid #e7e7e7;
+    margin: 0 0 0 250px;
+    padding: 0 30px;
+    position: inherit;
+        }
+#menu ul li {
+        margin: 0; padding: 0px;
+        border-bottom: 1px solid #CCC;
+        text-align: left;
+        list-style-type: none;
+        }
 /*Inicia css sistema pagina inicial*/
 
 .inicia{
     background: #1C1C1C;
     float: left;
     position:absolute;
-    left:25%;
+    left:1%;
+    height:1%;
+    top: :10%;
 }
 
 .tagid{
@@ -59,26 +73,26 @@ header{
      margin: 4px 85%;
      cursor: pointer;
 }
-header nav{
+/*Pheader nav{
     height: 40px;
     width: 100%;
     background-image: url("../img/background-menu.png");
     background-repeat: repeat-x;
     margin-top: -6px;
      border: solid 2px #646464;
-}
+}*/
 header nav ul {
     width: 100%;
     
 }
 header nav ul li{
-    height: 30px;
+    height: auto;
     float: left;
     list-style: none;
-    border-right: solid 1px #646464;
-    padding: 7px 20px 5px 15px;
+    /*border-right: solid 1px #646464;*/
+    padding: 1px 20px 5px 20px;
     margin-top: 3px;
-    margin-left: -7px;
+    margin-left: 0px;
 }
 #.last{
     #border-right: solid 0px #646464;
@@ -89,8 +103,8 @@ header nav ul li{
 nav ul li:last-child{
     padding: 5px 25px;
     float: right;
-    border-right: solid 0px #3d3d3d;
-    border-left: solid 1px #3d3d3d;
+    /*border-right: solid 1px #3d3d3d;
+    border-left: solid 1px #3d3d3d;*/
     color: #fff;
 }
 
@@ -121,15 +135,16 @@ header nav ul li div a:hover{
 
 /*css conteudo*/
 .conteudo{
-   background: #E8E8E8;
+   background: #FFFFFF;
    background-image: url("../img/sobra-menu-bootom.png");
     background-position-y:0px;
     background-repeat: no-repeat;
-    padding-top: 20px;
-   float: left;
-   width: 100%;
+    padding-top: 70px;
+    padding-left: 70px;
+    float: left;
+    width: 80%;
     background-image: url('../img/sobra-conteudo.png'), url('../img/sobra-conteudo-direita.png');
-    background-position: -5px 50%, 773px 50%;
+    background-position: -5px 50%, 100% 50%;
     background-repeat: no-repeat, no-repeat;
 }
 .conteudo label{
@@ -138,10 +153,10 @@ header nav ul li div a:hover{
 
 .conteudoMesmo{
     margin: 0 auto;
-    width: 750px;
-    border: solid 1px #d7d7d7;
-   padding: 15px 10px 15px 50px;
-   margin-bottom: 15px;
+    width: 95%;
+    /*border: solid 1px #d7d7d7;*/
+    padding: 15px 10px 15px 50px;
+    margin-bottom: 15px;
 }
 .conteudoMesmo .home li{
     margin: 20px 20px;
@@ -227,7 +242,7 @@ header nav ul li div a:hover{
 /*footer*/
 footer{
     float: left;
-    width: 750px;
+    width: 95%;
     margin: 0px 25px ;
     height: 40px;
     margin-top: 50px;
@@ -296,4 +311,76 @@ footer{
 }
 .myaccount .loadMyaccount{
     margin: 35px 250px;
+}
+
+
+/*Leticial alterações*/
+
+.btn-group-vertical {
+    width: 20%;
+    margin: 0; padding: 0;
+    float: left;
+    top: 52px;
+}
+.btn-group {
+    top: 17px;
+}
+*{margin: 0; padding: 0;}
+
+.menu{
+    list-style:none; 
+    /*border:1px solid #c0c0c0; */
+    float:left;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    position:relative; 
+    float:left; 
+    /*border-right:1px solid #c0c0c0; */
+}
+.menu li a{
+    color:#333; 
+    padding:5px 15px; 
+    display:list-item;
+}
+.menu li a:hover{
+    color:#fff; 
+    -moz-box-shadow:0 3px 10px 0 #CCC; 
+    -webkit-box-shadow:0 3px 10px 0 #ccc; 
+    text-shadow:0px 0px 5px     #000000; 
+}
+.menu li   ul{
+    position:absolute; 
+    width: auto;
+    top:25px; 
+    left:0; 
+    background-color:#EEE9E9; 
+    display:none; 
+}
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+.menu li ul li{
+   /* border:1px solid #c0c0c0; */
+    display:block;
+    width:auto;
+}
+.sub-item {
+text-align: left;
+}
+.fonteMenu {
+    text-shadow: 0px 2px 3px #666;
+    text-decoration: bold;
+}
+.fonteMenuPag{
+    font-size: 34px;
+    text-shadow: 0px 2px 3px #666;
+    font-family: calibri;
+}
+.button_form{
+    float: right;
+
 }
