@@ -14,7 +14,7 @@ class Config {
 		ob_start();
 
 		//site address
-		define('DIR','http://smartbraselet.com.br');
+		define('DIR','http://smartbraselet.com.br:85');
 		define('JS', DIR.'/app/templates/default/js/');
 		define('CSS', DIR.'/app/templates/default/css/');
 		define('FONT', DIR.'/app/templates/default/fonts/');

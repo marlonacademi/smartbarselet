@@ -16,15 +16,5 @@
 			View::rendertemplate('footer');
 			
 		}
-		public function cpf(){
-			$cpf = $_POST['cpf'];
-			echo "alguma coisa";
-			$client = $this->_client->getClientbyCpf($cpf);
-			if (count($client) > 0){
-				echo json_encode($client);
-			}else{
-				echo null;
-			}
-		}
 	}
  ?>
