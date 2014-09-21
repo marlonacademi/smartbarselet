@@ -3,7 +3,7 @@
 	use core\view,
 	helpers\session as Session;
 
-	class clientesCadastrar extends \core\controller 
+	class clientesCadastrar extends \core\controller {
 
 		public function __construct(){
 			parent::__construct();
