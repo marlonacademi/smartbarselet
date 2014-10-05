@@ -1,49 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<title><?php echo $data['title'].' - '.SITETITLE; //SITETITLE defined in index.php?></title>
-		<script src="<?php echo JS; ?>jquery-1.11.0.min.js"></script>
-        <script src="<?php echo JS; ?>jquery-ui.js"></script>
-        <script src="<?php echo JS; ?>bootstrap.js"></script>
-        <script src="<?php echo JS; ?>inicio-sistema.js"></script> 
-        <?php if ($data['script']){ 
-        			foreach ($data['script'] as  $value) {
-        				echo '<script src="'.JS.$value.'"></script> ';
-        			}
-        		}
-		?>
-        <link href="<?php echo CSS; ?>bootstrap.css" rel="stylesheet"/>
-        <link href="<?php echo CSS; ?>bootstrap-theme.css" rel="stylesheet"/>
-        <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="<?php echo CSS; ?>css.css"/>
-        <?php 
-        		if ($data['style']){
-        			foreach ($data['style'] as $value) {
-        				echo '<link href="'.CSS.$value.'" rel="stylesheet"/>';
-        			}
-        		}
-         ?>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+        AdminFlare - Dashboard
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="<?php echo CSS ?>bootstrap.css"/>
+    <link rel="stylesheet" href="<?php echo CSS ?>adminflare.min.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <script src="<?php echo JS ?>modernizr-jquery.min.js" type="text/javascript"></script>
+    <script src="<?php echo JS ?>bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="tagid"><?php echo $data['idFuncionario']?></div>
-        <div id="wrapper" class="inicia">
-            <header>
-                <div class="logo">
-                    <a href="/index"><img src="<?php echo IMG; ?>logo.png"/></a>
-                </div>
-                <div class="logoff">
-                    <img src="<?php echo IMG; ?>logoff.png"/>
-                </div>
-                <nav>
-                    <ul class="list-unstyled">
-                        <li><div><a href="/index">Home</a></div></li>
-                            <li><div>teste</div></li>
-                            <li><div>teste</div></li>
-                            <li><div>teste</div></li>
-                            <li class="last"><div>teste</div></li>  
-                            <li><div><a href="http://localhost/projects/TG/Desenvolvimento/View/my_account">My account</a></div></li>
+    <header class="navbar navbar-fixed-top" id="main-navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="logo"><img src="app/templates/default/images/af-logo.png"></a>
+
+                <a class="btn nav-button collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-reorder"></span>
+                </a>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="index">Home</a></li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Clientes <i class=" icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a>Cadastrar cliente</a></li>
+                                <li><a>Pesquisar cliente</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Comandas <i class=" icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a>Carregar comanda</a></li>
+                                <li><a>Associar comanda</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                         <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Pedidos <i class=" icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a>Incluir Pedido</a></li>
+                                <li><a>Editar pedido</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Produtos <i class=" icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a>Cadastrar produto</a></li>
+                                <li><a>Listar produtos</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Funcionarios <i class=" icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a>Cadastrar funcionarios</a></li>
+                                <li><a>Listar funcionarios</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Configurações <i class=" icon-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a>Configurações</a></li>
+                                <li><a>Cadastrar grupo</a></li>
+                                <li><a>Grupos</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
                     </ul>
-                </nav>
-            </header>
-            <div class="conteudo">
+                    <ul class="nav pull-right">
+                        <li class="separator"></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle usermenu" data-toggle="dropdown">
+                                <img alt="Avatar" src="app/templates/default/images/avatar.png">
+                                <span>&nbsp;&nbsp;Admin</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Settings</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="index.html">Sign In</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / Main navigation bar -->
+    
+    <!-- Left navigation panel
+        ================================================== -->
+    <nav id="left-panel">
+        <div id="left-panel-content">
+            <ul>
+                <li class="active">
+                    <a href="dashboard.html"><span class="icon-dashboard"></span>Dashboard</a>
+                </li>
+                <li>
+                    <a href="layout.html"><span class="icon-th-large"></span>Layout</a>
+                </li>
+                <li>
+                    <a href="typography.html"><span class="icon-font"></span>Typography</a>
+                </li>
+                <li>
+                    <a href="forms.html"><span class="icon-edit"></span>Forms</a>
+                </li>
+                <li>
+                    <a href="tables.html"><span class="icon-table"></span>Tables</a>
+                </li>
+                
+                <li>
+                    <a href="components.html"><span class="icon-inbox"></span>Components</a>
+                </li>
+                <li>
+                    <a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
+                </li>
+                <li class="lp-dropdown">
+                    <a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
+                    <ul class="lp-dropdown-menu" data-dropdown-owner="extras-dropdown">
+                        <li>
+                            <a tabindex="-1" href="extras-icons.html"><span class="icon-coffee"></span>Icons</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="extras-charts.html"><span class="icon-bar-chart"></span>Charts</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="extras-widgets.html"><span class="icon-star"></span>Widgets</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="lp-dropdown">
+                    <a href="#" class="lp-dropdown-toggle" id="pages-dropdown"><span class="icon-file-alt"></span>Pages</a>
+                    <ul class="lp-dropdown-menu simple" data-dropdown-owner="pages-dropdown">
+                        <li>
+                            <a tabindex="-1" href="index.html"><i class="icon-signin"></i>&nbsp;&nbsp;Sign In</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-signup.html"><i class="icon-check"></i>&nbsp;&nbsp;Sign Up</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-messages.html"><i class="icon-envelope-alt"></i>&nbsp;&nbsp;Messages</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-stream.html"><i class="icon-leaf"></i>&nbsp;&nbsp;Stream</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-pricing.html"><i class="icon-money"></i>&nbsp;&nbsp;Pricing</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-invoice.html"><i class="icon-pencil"></i>&nbsp;&nbsp;Invoice</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-map.html"><i class="icon-map-marker"></i>&nbsp;&nbsp;Full page map</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-error-404.html"><i class="icon-unlink"></i>&nbsp;&nbsp;Error 404</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-error-500.html"><i class="icon-bug"></i>&nbsp;&nbsp;Error 500</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="pages-blank.html"><i class="icon-bookmark-empty"></i>&nbsp;&nbsp;Blank page</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="icon-caret-down"></div>
+        <div class="icon-caret-up"></div>
+    </nav>
+    <section class="row-fluid well">
+        

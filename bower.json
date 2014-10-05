@@ -1,0 +1,27 @@
+{
+  "name": "smartbarselet",
+  "version": "1.0.0",
+  "homepage": "https://github.com/marlonacademi/smartbarselet",
+  "authors": [
+    "marlon oliveira barbosa <marlon.academi@gmail.com>"
+  ],
+  "description": "sistema para controle de comandas eletronicas",
+  "main": "index.php",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+   "dependencies": {
+    "bootstrap": "~3.1.1",
+    "less": "~1.7.1",
+    "font-awesome": "~4.2.0",
+    "jquery": "1.10.2",
+    "jquery-ui": "1.10.4",
+    "numeraljs": "https://github.com/adamwdraper/Numeral-js.git",
+    "animate.less": "*"
+  }
+}

@@ -1,5 +1,5 @@
-</div>
-<footer>
+</section>
+<footer id="main-footer">
     Copyright © 2014 grupo TG Fatec carapicuiba
 All Rights Reserved - Todos os Direitos Reservados.
 </footer>
