@@ -6,7 +6,7 @@
 	class incluir_pedidos extends \core\controller {
 		public function index(){
 		View::rendertemplate('header',$data);
-			View::render('incluir_pedidos/view_incluir_pedidos',$data);
+			View::render('menu_pedidos/view_incluir_pedidos',$data);
 			View::rendertemplate('footer',$data);
 			
 		}

@@ -8,40 +8,53 @@
         <table border = '0'>    
         <form class="form-horizontal associarComanda" id="associarComanda">
             <div class="bg-danger errosCliente ">
-                
             </div>
-            <tr>
-            <div class="form-group">
-               
-                <td> <label for="Cpf" class="control-label col-xs-3">CPF:</label></td>
-                <td><div class="col-xs-5">
-                    <input type="text" name="Cpf" class="form-control2 txtCpfCliente sonums cpfCliente" placeholder="Digite o CPF."/></td>
-                    <td><input type="submit" class="btn btn-primary button_form btn-pesquisar-cliente" value="Pesquisar"/></td>
-                </div>
-                
-            </div>
-            </tr>
-            <tr>
-            <div class="form-group">
-                <td><label for="codComanda" class="control-label col-xs-3" >Comanda:</label></td>
-                <td><div class="col-xs-5">
-                    <input type="text" name="codComanda" class="form-control2 txtNomeCliente" placeholder="Nemero da Comanda"/></td>
-                    <td><input type="submit" class="btn btn-primary button_form btn-pesquisar-cliente" value="Associar"/></td>
 
+            <div class="form-group">
+                <label for="Cpf" class="control-label col-xs-2">CPF:</label>
+                <div class="col-xs-5">
+                    <input type="text" name="Cpf" class="form-control2 txtCpfCliente sonums cpfCliente" placeholder="Digite o CPF."/>
+                </div>
+                <div class="col-xs-5">
+                    <input type="submit" class="btn btn-primary button_form btn-pesquisar-cliente" value="Pesquisar"/>
                 </div>
             </div>
-            </tr>
-            <tr>
-                <td> <label for="comandaPre" class="control-label col-xs-3">Comanda Pré-paga:</label></td>
-                <td> <input type="radio" name="comandaPre" value="preSim">Sim</td>      
-                <td> <input type="radio" name="comandaPre" value="preNao">Não</td>
-             </tr>     
+            
+            
+            <div class="form-group">
+                <label for="codComanda" class="control-label col-xs-2" >Comanda:</label>
+                <div class="col-xs-5">
+                    <input type="text" name="codComanda" class="form-control2 txtNomeCliente" placeholder="Nemero da Comanda"/>
+                </div>
+                <div class="col-xs-5">
+                    <input type="submit" class="btn btn-primary button_form btn-pesquisar-cliente" value="Associar"/>
+                </div>
+            </div>
 
-            <tr><td colspan='3'>
+            <div class="form-group">
+                 <label for="comandaPre" class="control-label col-xs-13">Comanda Pré-paga:</label>
+            </div>
+
+            <div class="form-group">
+                 <label for="comandaPreSim" class="control-label col-xs-1" >Sim:</label>
+                 <div class="col-xs-5">
+                    <input type="radio" name="comandaPre" value="preSim">
+                 </div>
+            </div>
+            <div class="form-group">
+                 <label for="comandaPreNao" class="control-label col-xs-1" >Não:</label>
+                 <div class="col-xs-5">
+                    <input type="radio" name="comandaPre" value="preNao">
+                </div>
+            </div>
+
+            
             <div class="form-group" >
-                <input type="submit" class="btn btn-primary button_form btn-pesquisar-cliente" value="Carregar comanda"/>
+                <div class="col-xs-5">
+                 <input type="submit" class="btn btn-primary button_form btn-pesquisar-cliente" value="Carregar comanda"/>
+                </div>
            </div>
-            </td></tr>
+            
         </form>
     </table>
 </section>

@@ -1,24 +1,26 @@
-    <label>Home</label>
+    <label class="fonteMenuPag">Home</label>
+
+
+    <label class="tituloPagHome">Seja Bem vindo(a) ao Sistetema SmartBraselet</label>
+
     <section class="conteudoMesmo">
-        <ul class="list-unstyled list-inline home">
-            <li title="Menu Clientes" rel="tooltip">
-                <a href="menu_clientes"><img src="<?php echo IMG ?>addCustomers.png"/></a>
-            </li>
-            <li title="Menu Comandas" rel="tooltip" >
-               <a href="menu_comandas"><img src="<?php echo IMG ?>addCustomers.png"/></a>
-            </li>
-            <li title="Menu pedidos" rel="tooltip">
-                <a href="menu_pedidos"><img src="<?php echo IMG ?>addCustomers.png"/></a>
-            </li title="Menu produtos" rel="tooltip">
-            <li>
-                <a href="menu_produtos"><img src="<?php echo IMG ?>addCustomers.png"/></a>
-            </li>
-            <li title="Menu funcionários" rel="tooltip">
-               <a href="menu_funcionarios"><img src="<?php echo IMG ?>addCustomers.png"/></a>
-            </li>
-            <li title="Menu sistema" rel="tooltip">
-               <a href="menu_sistema"><img src="<?php echo IMG ?>addCustomers.png"/></a>
-            </li>
-			Lezinha
-        </ul>
+
+        <p>Navegue pelo menu superior para acessar os módulos do sistema, 
+            contamos com um menu de acesso rápido na lateral para facilitar sua navegação!</p>
+            </br>
+            </br>
+        <p>Sistema de Automatização de comandas.</p>
+            </br>
+        <p>Desenvolvido por:</p>
+            </br>
+            <p>Diego da Silva Goulart</p>
+            <p>Jéssica Souza Tomoda</p>
+            <p>Letícia Souza Tomoda</p>
+            <p>Marlon Oliveira Barbosa</p>
+             </br>
+        <p>Faculdade de tecnologia de carapicuíba</p>
+        <p>Curso: Desenvilvimento de Sistemas para Internet</p>
+        <p>Versão: 1.3 </p>
+        <p>Data: 21/09/2014</p>
+
     </section>

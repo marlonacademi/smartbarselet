@@ -6,7 +6,7 @@
 	class carregar_comandas extends \core\controller {
 		public function index(){
 		View::rendertemplate('header',$data);
-			View::render('carregar_comandas/view_carregar_comandas',$data);
+			View::render('menu_comandas/view_carregar_comandas',$data);
 			View::rendertemplate('footer',$data);
 			
 		}

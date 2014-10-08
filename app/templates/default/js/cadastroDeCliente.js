@@ -25,6 +25,7 @@ $(document).ready(function(){
                 },
                 success: function(data)
                 {
+                  alert(data);
                      if (data){
                          $('.txtNomeCliente').val(ob[1].nome);
                          $('.txtEnderecoCliente').val(ob[2].endereco);
@@ -39,7 +40,7 @@ $(document).ready(function(){
                 }
             });
     });
-    var erros = new Array();
+    /*var erros = new Array();
     $('.btn-cadatra-cliente').click(function(event){
         erros = [];
         event.preventDefault();
@@ -93,7 +94,7 @@ $(document).ready(function(){
             
             return false;
         }
-    });
+    });*/
 });
 
 

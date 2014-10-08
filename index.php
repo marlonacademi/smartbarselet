@@ -70,17 +70,31 @@ Router::any('teste', '\controllers\teste@index');
 Router::any('menu_clientes', '\controllers\menu_clientes@index');
 	Router::any('cadastrar_clientes', '\controllers\cadastrar_clientes@index');
 	Router::any('pesquisar_clientes', '\controllers\pesquisar_clientes@index');
+	Router::any('verifica', '\controllers\verifica@index');
+	Router::any('cadastrarClientes/cpf', '\controllers\clientes\cadastrarClientes@cpf');
+
 //MENU COMANDAS
 Router::any('menu_comandas', '\controllers\menu_comandas@index');
 	Router::any('associar_comandas', '\controllers\associar_comandas@index');
+	Router::any('carregar_comandas', '\controllers\carregar_comandas@index');
 //MENU PEDIDOS
 Router::any('menu_pedidos', '\controllers\menu_pedidos@index');
+	Router::any('incluir_pedidos', '\controllers\incluir_pedidos@index');
+	Router::any('editar_pedidos', '\controllers\editar_pedidos@index');
 //MENU PRODUTOS
 Router::any('menu_produtos', '\controllers\menu_produtos@index');
+	Router::any('cadastrar_produtos', '\controllers\cadastrar_produtos@index');
+	Router::any('editar_produtos', '\controllers\editar_produtos@index');
+	Router::any('listar_produtos', '\controllers\listar_produtos@index');
 //MENU FUNCIONARIOS
 Router::any('menu_funcionarios', '\controllers\menu_funcionarios@index');
+	Router::any('cadastrar_funcionarios', '\controllers\cadastrar_funcionarios@index');
+	Router::any('editar_funcionarios', '\controllers\editar_funcionarios@index');
 //MENU SISTEMA
 Router::any('menu_sistema', '\controllers\menu_sistema@index');
+	Router::any('parametrizacao_sistema', '\controllers\parametrizacao_sistema@index');
+	Router::any('cadastrar_grupos', '\controllers\cadastrar_grupos@index');
+	Router::any('editar_grupos', '\controllers\editar_grupos@index');
 
 	
 //if no route found

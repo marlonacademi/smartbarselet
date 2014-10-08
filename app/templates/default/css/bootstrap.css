@@ -777,7 +777,6 @@ pre code {
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
-
 .col-xs-13 {
   width: auto;
 }
@@ -1732,6 +1731,8 @@ output {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+
+col-xs-3
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
@@ -2069,6 +2070,7 @@ fieldset[disabled] .btn {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
+  border-style: dashed;
 }
 .btn-default:hover,
 .btn-default:focus,

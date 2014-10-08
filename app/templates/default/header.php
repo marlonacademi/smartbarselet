@@ -30,6 +30,7 @@
     <!-- TOPO -->
     <header>
      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <p class="inf"> System version: 1.3 </p>
     <div class="container">
         <div class='logo'>
             <a href="/index"><img src="<?php echo IMG; ?>MinilogoSB.png"/></a>
@@ -38,50 +39,50 @@
     <!-- /.MENU DROPOWN -->
       
     <ul class="menu">
-            <li><a href="/index">Home</a></li>
-            <li><a href="/index">Clientes</a>
+            <li class="fonteMenuSup"><a href="/index">Home</a></li>
+            <li class="fonteMenuSup"><a href="/index">Clientes</a>
                 <ul class="sub-item">
-                        <li><a href="/cadastrar_clientes">Cadastrar</a></li>
-                        <li><a href="/pesquisar_clientes">Pesquisar</a></li>
+                        <li class="fonteMenuSup"><a href="/cadastrar_clientes">Cadastrar</a></li>
+                        <li class="fonteMenuSup"><a href="/pesquisar_clientes">Pesquisar</a></li>
                 </ul>
             </li>
-            <li><a href="/index">Comandas</a>
+            <li class="fonteMenuSup"><a href="/index">Comandas</a>
                 <ul class="sub-item">
-                        <li><a href="/associar_comandas">Associar Comanda</a></li>
-                        <li><a href="/carregar_comandas">Carregar Comanda pré-paga</a></li>                   
+                        <li class="fonteMenuSup"><a href="/associar_comandas">Associar Comanda</a></li>
+                        <li class="fonteMenuSup"><a href="/carregar_comandas">Carregar Comanda pré-paga</a></li>                   
                 </ul>
             </li>
-            <li><a href="/index">Pedido</a>
+            <li class="fonteMenuSup"><a href="/index">Pedido</a>
                 <ul>
-                        <li><a href="/incluir_pedidos">Incluir Pedido</a></li>
-                        <li><a href="/editar_pedidos">Editar Pedido</a></li>                  
+                        <li class="fonteMenuSup"><a href="/incluir_pedidos">Incluir Pedido</a></li>
+                        <li class="fonteMenuSup"><a href="/editar_pedidos">Editar Pedido</a></li>                  
                 </ul>
             </li>
-            <li><a href="/index">Produto</a>
+            <li class="fonteMenuSup"><a href="/index">Produto</a>
                 <ul>
-                        <li><a href="/incluir_produtos">Incluir Produto</a></li>
-                        <li><a href="/editar_produtos">Editar Produto</a></li>
-                        <li><a href="/listar_produtos">Listar Produto</a></li>                 
+                        <li class="fonteMenuSup"><a href="/cadastrar_produtos">Cadastrar Produto</a></li>
+                        <li class="fonteMenuSup"><a href="/editar_produtos">Editar Produto</a></li>
+                        <li class="fonteMenuSup"><a href="/listar_produtos">Listar Produto</a></li>                 
                 </ul>
             </li>
-            <li><a href="/index">Funcionário</a>
+            <li class="fonteMenuSup"><a href="/index">Funcionário</a>
                 <ul>
-                        <li><a href="/incluir_funcionarios">Incluir Funcionário</a></li>
-                        <li><a href="/editar_funionarios">Editar Funcionário</a></li>                    
+                        <li><a href="/cadastrar_funcionarios">Cadastrar Funcionário</a></li>
+                        <li><a href="/editar_funcionarios">Editar Funcionário</a></li>                    
                 </ul>
             </li>
-            <li><a href="/index">Parâmetros Gerais</a>
+            <li class="fonteMenuSup"><a href="/index">Parâmetros Gerais</a>
                 <ul>
-                        <li><a href="/parametrizacao">Parametrização</a></li>                   
+                        <li class="fonteMenuSup"><a href="/parametrizacao">Parametrização</a></li>                   
                 </ul>
             </li>
-            <li><a href="/index">Grupos</a>
+            <li class="fonteMenuSup"><a href="/index">Grupos</a>
                 <ul>
-                        <li><a href="/cadastrar_grupo">Cadastrar Grupo</a></li>
-                        <li><a href="/permissoes-grupo">Permissões de Grupo</a></li>                    
+                        <li class="fonteMenuSup"><a href="/cadastrar_grupo">Cadastrar Grupo</a></li>
+                        <li class="fonteMenuSup"><a href="/permissoes-grupo">Permissões de Grupo</a></li>                    
                 </ul>
             </li>
-        <li><a href="/index">Fotos</a></li>
+        <li class="fonteMenuSup"><a href="/index">Fotos</a></li>
         <li><a href="/index"><img src="<?php echo IMG; ?>sair.png"/></a></li>  
                
     </ul>
@@ -97,7 +98,7 @@
         <h3 class="fonteMenu">Principais Operações</h3>
 
         <div class="btn-group">
-            <button type="button" class="btn btn-default">Cadastrar Clientes</button>
+            <button type="button" class="btn btn-default" href="/cadastrar_funcionarios">Cadastrar Clientes</button>
         </div>
         <div class="btn-group">
             <button type="button" class="btn btn-default">Associar Comanda</button>

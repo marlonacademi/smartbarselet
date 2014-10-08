@@ -15,8 +15,9 @@
 			if (Session::get('idFuncionario')){
 				Url::redirect('index');
 			}
-			$date['title'] = 'Login sistema';
+			$data['title'] = 'Login sistema';
 			View::render('login/login',$data);
+
 		}
 
 		public function validateLogin(){
