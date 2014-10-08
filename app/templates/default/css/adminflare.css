@@ -3461,6 +3461,7 @@ body,
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin-right: 30px;
 }
 .widget-actions {
   background: rgba(0, 0, 0, 0.03);

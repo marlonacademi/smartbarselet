@@ -22,6 +22,7 @@
     "jquery": "1.10.2",
     "jquery-ui": "1.10.4",
     "numeraljs": "https://github.com/adamwdraper/Numeral-js.git",
-    "animate.less": "*"
+    "animate.less": "*",
+    "flot" : "*"
   }
 }

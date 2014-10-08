@@ -21,8 +21,8 @@
 <body>
     <header class="navbar navbar-fixed-top" id="main-navbar">
         <div class="navbar-inner">
-            <div class="container">
-                <a class="logo"><img src="app/templates/default/images/af-logo.png"></a>
+            <div>
+                <a class="logo" href="index"><img src="app/templates/default/images/af-logo.png"></a>
 
                 <a class="btn nav-button collapsed" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-reorder"></span>
@@ -67,7 +67,7 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Funcionarios <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a>Cadastrar funcionarios</a></li>
+                                <li><a href="cadastrarfuncionario">Cadastrar funcionarios</a></li>
                                 <li><a>Listar funcionarios</a></li>
                             </ul>
                         </li>
@@ -114,8 +114,8 @@
     <nav id="left-panel">
         <div id="left-panel-content">
             <ul>
-                <li class="active">
-                    <a href="dashboard.html"><span class="icon-dashboard"></span>Dashboard</a>
+                <li class="home">
+                    <a href="index"><span class="fa fa-home"></span>Home</a>
                 </li>
                 <li>
                     <a href="layout.html"><span class="icon-th-large"></span>Layout</a>
@@ -190,5 +190,5 @@
         <div class="icon-caret-down"></div>
         <div class="icon-caret-up"></div>
     </nav>
-    <section class="row-fluid well">
+    <section class="row-fluid">
         

@@ -4,6 +4,10 @@
 	helpers\session as Session;
 
 	class index extends \core\controller {
+		public function __construct(){
+			parent::__construct();
+			$this->_index = new \models\index();
+		}
 		public function index(){
 			$data['idFuncionario'] = Session::get('idFuncionario');
 			$data['script'] 	   = array('apprise-v2.js','verificaTag.js');
@@ -11,6 +15,12 @@
 			View::rendertemplate('header',$data);
 			View::render('common/home',$data);
 			View::rendertemplate('footer',$data);
+		}
+
+		public function flotCustomer(){
+			$employes =  $this->_index->getBestEmployees();
+			
+			// echo json_encode($employes);
 		}
 	}
  ?>
