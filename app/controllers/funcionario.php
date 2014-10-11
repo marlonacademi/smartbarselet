@@ -12,6 +12,8 @@
 			View::render('funcionario/cadastrar',$data);
 			View::rendertemplate('footer',$data);
 		}
+		public function validateCadastro (){
 
+		}
 	}
  ?>

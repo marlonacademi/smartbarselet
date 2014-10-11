@@ -61,13 +61,14 @@ $(document).ready(function (){
             $('.errosCliente').fadeOut(300).html("");
             var form = $('.cadastrarFuncionario').serialize(); 
             $.ajax({
-                url:'../Controllers/cadastroFuncionarioContoller.class.php?chave=gravarFuncionario',
+                url:'validateCadastro',
                 type:'POST',
                 data:form,
                 datatype: 'json',
                 success: function(data) {
-                    document.forms[0].reset();
-                    Apprise("Funcionario cadastrado com sucesso!");
+                    
+                    // document.forms[0].reset();
+                    // Apprise("Funcionario cadastrado com sucesso!");
                 }
             });
             return false;

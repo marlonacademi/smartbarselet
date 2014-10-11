@@ -67,3 +67,4 @@
 			<input type="submit" class="btn btn-primary btn-cadatra-funcionario" value="Cadastrar"/>
 		</div>
 	</section>
+    <script src="<?php echo JS ?>sistema/cadastroFuncionario.js" type="text/javascript"></script>

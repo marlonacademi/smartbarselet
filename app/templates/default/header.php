@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="<?php echo CSS ?>bootstrap.css"/>
     <link rel="stylesheet" href="<?php echo CSS ?>adminflare.min.css"/>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <script src="<?php echo JS ?>modernizr-jquery.min.js" type="text/javascript"></script>
     <script src="<?php echo JS ?>bootstrap.min.js" type="text/javascript"></script>
 

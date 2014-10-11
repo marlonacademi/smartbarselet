@@ -64,6 +64,8 @@ Router::any('login', '\controllers\login@validateLogin');
 Router::any('index', '\controllers\index@index');
 Router::any('flotCustomer', '\controllers\index@flotCustomer');
 Router::any('cadastrarfuncionario', '\controllers\funcionario@index');
+Router::any('validateCadastro', '\controllers\funcionario@validateCadastro');
+
 //if no route found
 Router::error('\core\error@index');
 
