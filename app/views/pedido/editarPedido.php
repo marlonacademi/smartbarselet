@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="<?php echo CSS ?>estilo.css"/>
 <section class="well">
-	<label class="titles">Cadastrar Funcionário</label>
-	 <hr>
-	<form class="form-horizontal cadastrarFuncionario">
 
+		 <label class="titles">Editar Pedido</label>
+	 	<hr>
+	<form class="form-horizontal cadastrarFuncionario">
 		<div class="bg-danger errosCliente ">
 			
 		</div>

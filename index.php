@@ -59,11 +59,22 @@ use \core\router as Router,
     \helpers\url as Url;
 
 //define routes
+Router::any('welcome', '\controllers\welcome@index');
 Router::any('', '\controllers\login@index');
 Router::any('login', '\controllers\login@validateLogin');
 Router::any('index', '\controllers\index@index');
 Router::any('flotCustomer', '\controllers\index@flotCustomer');
 Router::any('cadastrarfuncionario', '\controllers\funcionario@index');
+Router::any('cadastrarCliente', '\controllers\cliente@index');
+Router::any('pesquisarCliente', '\controllers\clientePesquisar@index');
+Router::any('associarComanda', '\controllers\comandaAssociar@index');
+Router::any('carregarComanda', '\controllers\comandaCarregar@index');
+Router::any('fecharComanda', '\controllers\comandaFechar@index');
+Router::any('editarPedido', '\controllers\pedidoEditar@index');
+Router::any('incluirPedido', '\controllers\pedidoIncluir@index');
+Router::any('cadastrarProduto', '\controllers\produtoCadastrar@index');
+Router::any('editarProduto', '\controllers\produtoEditar@index');
+Router::any('listarProduto', '\controllers\produtoListar@index');
 //if no route found
 Router::error('\core\error@index');
 
