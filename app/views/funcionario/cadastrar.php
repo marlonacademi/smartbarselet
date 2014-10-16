@@ -61,9 +61,9 @@
 				<select name="permemissao" class="form-control selectPermicao ">
 					<option></option>
 					<option value="0">Administrador</option>
-					<option value="1">Venda</option>
+					<option value="1">Vendedor</option>
 					<option value="2">Recepcionista</option>
-					<option value="3">Balção</option>
+					<option value="2">Caixa</option>
 				</select>
 			</div>
 		</div>

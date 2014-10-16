@@ -1,73 +1,38 @@
 <link rel="stylesheet" href="<?php echo CSS ?>estilo.css"/>
-<section class="well">
 
-		 <label class="titles">Editar Pedido</label>
-	 	<hr>
-	<form class="form-horizontal cadastrarFuncionario">
-		<div class="bg-danger errosCliente ">
-			
-		</div>
+<section class="well">
+	<label class="titles"> Editar Pedido</label>
+			<hr>
+	<form class="form-horizontal associarComanda" id="carregarComandas">
 		<div class="form-group">
-			<label for="Nome" class="control-label col-xs-3" >Nome:</label>
-			<div class="col-xs-5">
-				<input type="text" name="Nome" class="form-control input-lg txtNomeFuncionario" placeholder="Digite seu nome."/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="Endereco" class="control-label col-xs-3">Endereço:</label>
-			<div class="col-xs-5">
-				<input type="text" name="Endereco" class="form-control txtEnderecoFuncionario" placeholder="Digite seu endereço."/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="Telefone" class="control-label col-xs-3">Telefone:</label>
-			<div class="col-xs-5">
-				<input type="text" name="Telefone" class="form-control txtTelefoneFuncionario sonums" placeholder="Digite seu Telefone celular."/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="Rg" class="control-label col-xs-3">RG:</label>
-			<div class="col-xs-5">
-				<input type="text" name="Rg" class="form-control txtRgFuncionario sonums" placeholder="Digite seu rg."/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="Cpf" class="control-label col-xs-3">CPF:</label>
-			<div class="col-xs-5">
-				<input type="text" name="Cpf" class="form-control txtCpfFuncionario sonums" placeholder="Digite seu CPF."/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-xs-3">Login:</label>
-			<div class="col-xs-5 loginFun">
-				<input type="text" name="login" class="form-control txtLoginFuncionario" placeholder="Digite seu Login"/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-xs-3">Senha:</label>
-			<div class="col-xs-5">
-				<input type="password" name="senha" class="form-control txtSenhaFuncionario" placeholder="Digite sua senha"/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-xs-3">Confirme a senha:</label>
-			<div class="col-xs-5 divsenhaNovamente">
-				<input type="password" name="senha Novamente" class="form-control txtSenhaNovameneFuncionario" placeholder="Digite sua senha novamente."/>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-xs-3">Permissões:</label>
-			<div class="col-xs-5 selectPermicaoDiv">
-				<select name="permemissao" class="form-control selectPermicao ">
-					<option></option>
-					<option value="0">Administrador</option>
-					<option value="1">Venda</option>
-					<option value="2">Recepcionista</option>
-					<option value="3">Balção</option>
+			<div class="col-sm-3">
+				<label for="buscaCliente">Forma de Pesquisa:</label>
+				<select name="pesquisaCliente" class="form-control">
+					<option value="0">CPF</option>
+					<option value="1">Comanda</option>
 				</select>
 			</div>
+			<div class="col-lg-3">
+  				<label for="cpfCliente">Dado:</label>
+    			<div class="input-group">
+	      			<input type="text" class="form-control">
+	      			<span class="input-group-btn">
+	       		 	<button class="btn btn-default btn btn-primary" type="button">Pesquisar</button>
+      				</span>
+    			</div>
+  			</div>
+			<div class="col-sm-3">
+				<label>Nº Comanda:</label>
+				<br>
+				<label>Nome Consumidor: </label>
+				<br>
+				<label>Saldo pré-pago:</label>
+				<br>
+				<label>Saldo disponível: </label>
+			</div>
 		</div>
-		<div class="form-group ">
-			<input type="submit" class="btn btn-primary btn-cadatra-funcionario" value="Cadastrar"/>
-		</div>
-	</section>
+		<hr>
+		Resultado do consumo do cliente com a opção de excluir 
+	</form>
+
+</section>

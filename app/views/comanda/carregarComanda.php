@@ -24,10 +24,17 @@
       			</span>
     		</div>
   		</div>
+      <div class="col-sm-3">
+        <label>Nº Comanda:</label>
+        <br>
+        <label>Nome Consumidor: </label>
+        <br>
+        <label>Saldo pré-pago:</label>
+        <br>
+        <label>Saldo disponível: </label>
+      </div>
 	</div>
 
-<hr>
-Retornar dados do Cliente aqui!
 <hr>
 		<div class="form-group">
 			<div class="input-group col-sm-3">

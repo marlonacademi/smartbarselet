@@ -6,6 +6,7 @@
 	class cliente extends \core\controller {
 		public function __construct(){
 			parent::__construct();	
+
 		}
 		public function index(){
 			View::rendertemplate('header',$data);
@@ -13,5 +14,8 @@
 			View::rendertemplate('footer',$data);
 		}
 
+
 	}
  ?>
+
+ 

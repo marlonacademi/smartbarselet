@@ -6,35 +6,40 @@
 	<form class="form-horizontal associarComanda" id="carregarComandas">
 		<div class="form-group">
 			<div class="col-sm-3">
-				<label for="Cpf">CPF:</label>
-				<input type="text" name="Cpf" class="form-control" placeholder="Digite o CPF."/>
+				<label for="pesquisaCliente">Forma de Pesquisa:</label>
+				<select name="pesquisaCliente" class="form-control">
+					<option value="0">CPF</option>
+					<option value="1">Comanda</option>
+				</select>
 			</div>
+			<div class="col-lg-3">
+  				<label for="cpfCliente">Dado:</label>
+    			<div class="input-group">
+	      			<input type="text" class="form-control">
+	      			<span class="input-group-btn">
+	       		 	<button class="btn btn-default btn btn-primary" type="button">Pesquisar</button>
+      				</span>
+    			</div>
+  			</div>
 			<div class="col-sm-3">
-				<label for="codComanda" >Comanda:</label>
-				<div class="input-gropu">
-					<input type="text" name="codComanda" class="form-control" placeholder="Número da Comanda"/>				
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<input type="submit" class="btn btn-primary" style="margin-top:25px" value="Pesquisar"/>
-			</div>
-		</div>
-		<div class="form-group form-inline">
-			<div class="col-sm-3">
-				<label>Nome:</label>
-				<span>Leticia Tomoda</span>
-			</div>
-			<div class="col-sm-3">
-				<label>CPF:</label>
-				<span>321.145.444-85</span>
+				<label>Nº Comanda:</label>
+				<br>
+				<label>Nome Consumidor: </label>
+				<br>
+				<label>Saldo pré-pago:</label>
+				<br>
+				<label>Saldo disponível: </label>
 			</div>
 		</div>
 		<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-sm-5">
 				<label>Consumo:</label>
-				<span>1 Caipirinha R$ 15,00</span>
+				<span>Retornar tabela com os dados do consumo</span>
 			</div>
 		</div>
+		<hr>
+		
+		
 		<div class="form-group">
 			<div class="col-sm-3">
 				<label for="Cpf">Forma de Pagamento:</label>
