@@ -36,32 +36,34 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Clientes <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a>Cadastrar cliente</a></li>
-                                <li><a>Pesquisar cliente</a></li>
+                                <li><a  href="cadastrarCliente">Cadastrar cliente</a></li>
+                                <li><a  href="pesquisarCliente">Pesquisar cliente</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Comandas <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a>Carregar comanda</a></li>
-                                <li><a>Associar comanda</a></li>
+                                <li><a href="carregarComanda">Carregar comanda</a></li>
+                                <li><a href="associarComanda">Associar comanda</a></li>
+                                <li><a href="fecharComanda">Fechar comanda</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
                          <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Pedidos <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a>Incluir Pedido</a></li>
-                                <li><a>Editar pedido</a></li>
+                                <li><a href="incluirPedido">Incluir Pedido</a></li>
+                                <li><a href="editarPedido">Editar pedido</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Produtos <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a>Cadastrar produto</a></li>
-                                <li><a>Listar produtos</a></li>
+                                <li><a href="cadastrarProduto">Cadastrar produto</a></li>
+                                <li><a href="editarProduto">Editar produto</a></li>
+                                <li><a href="listarProduto">Listar produtos</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
@@ -119,24 +121,25 @@
                     <a href="index"><span class="fa fa-home"></span>Home</a>
                 </li>
                 <li>
-                    <a href="layout.html"><span class="icon-th-large"></span>Layout</a>
+                    <a href="cadastrarCliente"><span class="icon-group"></span>Novo Cliente</a>
                 </li>
                 <li>
-                    <a href="typography.html"><span class="icon-font"></span>Typography</a>
+                    <a href="pesquisarCliente"><span class="icon-user"></span>Pesquisar Cliente</a>
                 </li>
                 <li>
-                    <a href="forms.html"><span class="icon-edit"></span>Forms</a>
+                    <a href="incluirPedido"><span class="icon-edit-sign"></span>Fazer Pedido</a>
                 </li>
                 <li>
-                    <a href="tables.html"><span class="icon-table"></span>Tables</a>
+                    <a href="associarComanda"><span class="icon-ticket"></span>Associar Comandas</a>
+                </li>
+                <li>
+                    <a href="carregarComanda"><span class="icon-barcode"></span>Carregar Comanda</a>
+                </li>
+                <li>
+                    <a href="fecharComanda"><span class="icon-dollar"></span>Fechar Comanda</a>
                 </li>
                 
-                <li>
-                    <a href="components.html"><span class="icon-inbox"></span>Components</a>
-                </li>
-                <li>
-                    <a href="javascript.html"><span class="icon-cog"></span>JavaScript</a>
-                </li>
+                
                 <li class="lp-dropdown">
                     <a href="#" class="lp-dropdown-toggle" id="extras-dropdown"><span class="icon-reorder"></span>Extras</a>
                     <ul class="lp-dropdown-menu" data-dropdown-owner="extras-dropdown">

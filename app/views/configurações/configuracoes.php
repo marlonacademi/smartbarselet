@@ -1,10 +1,7 @@
-<link rel="stylesheet" href="<?php echo CSS ?>estilo.css"/>
-
 <section class="well">
-	<label class="titles">Cadastrar Funcionário</label>
-	 <hr>
-	<form class="form-horizontal cadastrarFuncionario">
 
+	<form class="form-horizontal cadastrarFuncionario">
+		<title>Cadastrar Funcionário</title>
 		<div class="bg-danger errosCliente ">
 			
 		</div>
@@ -62,9 +59,9 @@
 				<select name="permemissao" class="form-control selectPermicao ">
 					<option></option>
 					<option value="0">Administrador</option>
-					<option value="1">Vendedor</option>
+					<option value="1">Venda</option>
 					<option value="2">Recepcionista</option>
-					<option value="2">Caixa</option>
+					<option value="3">Balção</option>
 				</select>
 			</div>
 		</div>
@@ -72,8 +69,3 @@
 			<input type="submit" class="btn btn-primary btn-cadatra-funcionario" value="Cadastrar"/>
 		</div>
 	</section>
-    <script src="<?php echo JS ?>sistema/cadastroFuncionario.js" type="text/javascript"></script>
-    <script src="<?php echo JS ?>sistema/apprise-v2.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="<?php echo CSS ?>apprise-v2.css"/>
-    
-

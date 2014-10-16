@@ -35,15 +35,6 @@ $(document).ready(function (){
         {
             $('.selectPermicaoDiv').removeClass('has-error');
         }
-        if (loginde == false)
-        {
-            $('.loginFun').addClass('has-error');
-            erros.push("O Usuario ja existe na base de dados por favor digite outro.");
-        }
-        else 
-        {
-             $('.loginFun').removeClass('has-error');
-        }
             
         for (key in erros)
         {
@@ -66,35 +57,22 @@ $(document).ready(function (){
                 data:form,
                 datatype: 'json',
                 success: function(data) {
-                    
-                    // document.forms[0].reset();
-                    // Apprise("Funcionario cadastrado com sucesso!");
-                }
-            });
-            return false;
-        }
-    });
-    
-    $('.txtLoginFuncionario').blur(function(){
-        var login = $(this).val();
-        if ($(this).val().length > 3)
-        {
-        $.ajax({
-                url:'../Controllers/cadastroFuncionarioContoller.class.php?chave=login',
-                type:'POST',
-                data:"login="+login,
-                datatype: 'json',
-                success: function(data)
-                {
-                     var ob = JSON.parse(data);
-                     if (ob[0].retorno == "true"){
-                        loginde = true;
-                    } 
-                    else {
-                        loginde = false;
+                   try{ 
+                       var json = JSON.parse(data);
+                       
+                       if (json['error'] > 0) {
+                             Apprise(json['menssagem']);
+                       } else {
+                        Apprise(json['menssagem']);
+                        document.forms[0].reset();
+                       }
+                    } catch(err){
+
+                           Apprise('Aconteceu algum erro no parce do json');
                     }
                 }
             });
+            return false;
         }
     });
 
