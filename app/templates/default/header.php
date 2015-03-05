@@ -6,15 +6,30 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <base href="<?php DIR ?>">
     <title>
-        AdminFlare - Dashboard
+        AdminFlare - Dashboard <?php echo $data['title']; ?>
     </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="<?php echo CSS ?>bootstrap.css"/>
     <link rel="stylesheet" href="<?php echo CSS ?>adminflare.min.css"/>
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+    
+    <!-- Adiciona style vindo do controller -->
+    <?php if ($data['style']){ ?>
+        <?php foreach ($data['style'] as $style) { ?>
+            <link rel="stylesheet" href="<?php echo CSS.$style?>">    
+        <?php } ?>
+    <?php } ?>
+    
+    <!-- Adiciona script vindo do controller -->
+     <?php if ($data['script']){ ?>
+        <?php foreach ($data['script'] as $script) { ?>
+            <script src="<?php echo JS.$script ?>" type="text/javascript"></script>
+        <?php } ?>
+    <?php } ?>
     <script src="<?php echo JS ?>modernizr-jquery.min.js" type="text/javascript"></script>
     <script src="<?php echo JS ?>bootstrap.min.js" type="text/javascript"></script>
 
@@ -23,7 +38,7 @@
     <header class="navbar navbar-fixed-top" id="main-navbar">
         <div class="navbar-inner">
             <div>
-                <a class="logo" href="index"><img src="app/templates/default/images/af-logo.png"></a>
+                <a class="logo" href="/index"><img src="../app/templates/default/images/af-logo.png"></a>
 
                 <a class="btn nav-button collapsed" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-reorder"></span>
@@ -36,42 +51,42 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Clientes <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a  href="cadastrarCliente">Cadastrar cliente</a></li>
-                                <li><a  href="pesquisarCliente">Pesquisar cliente</a></li>
+                                <li><a  href="/cadastrarCliente">Cadastrar cliente</a></li>
+                                <li><a  href="/pesquisarCliente">Pesquisar cliente</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Comandas <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="carregarComanda">Carregar comanda</a></li>
-                                <li><a href="associarComanda">Associar comanda</a></li>
-                                <li><a href="fecharComanda">Fechar comanda</a></li>
+                                <li><a href="/carregarComanda">Carregar comanda</a></li>
+                                <li><a href="/associarComanda">Associar comanda</a></li>
+                                <li><a href="/fecharComanda">Fechar comanda</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
                          <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Pedidos <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="incluirPedido">Incluir Pedido</a></li>
-                                <li><a href="editarPedido">Editar pedido</a></li>
+                                <li><a href="/incluirPedido">Incluir Pedido</a></li>
+                                <li><a href="/editarPedido">Editar pedido</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Produtos <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="cadastrarProduto">Cadastrar produto</a></li>
-                                <li><a href="editarProduto">Editar produto</a></li>
-                                <li><a href="listarProduto">Listar produtos</a></li>
+                                <li><a href="/cadastrarProduto">Cadastrar produto</a></li>
+                                <li><a href="/editarProduto">Editar produto</a></li>
+                                <li><a href="/listarProduto">Listar produtos</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Funcionarios <i class=" icon-caret-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="cadastrarfuncionario">Cadastrar funcionarios</a></li>
-                                <li><a>Listar funcionarios</a></li>
+                                <li><a href="/cadastrarfuncionario">Cadastrar funcionarios</a></li>
+                                <li><a href="/listarfuncionarios">Listar funcionarios</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>
@@ -89,7 +104,7 @@
                         <li class="separator"></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle usermenu" data-toggle="dropdown">
-                                <img alt="Avatar" src="app/templates/default/images/avatar.png">
+                                <img alt="Avatar" src="../app/templates/default/images/avatar.png">
                                 <span>&nbsp;&nbsp;Admin</span>
                             </a>
                             <ul class="dropdown-menu">
@@ -121,22 +136,22 @@
                     <a href="index"><span class="fa fa-home"></span>Home</a>
                 </li>
                 <li>
-                    <a href="cadastrarCliente"><span class="icon-group"></span>Novo Cliente</a>
+                    <a href="/cadastrarCliente"><span class="icon-group"></span>Novo Cliente</a>
                 </li>
                 <li>
-                    <a href="pesquisarCliente"><span class="icon-user"></span>Pesquisar Cliente</a>
+                    <a href="/pesquisarCliente"><span class="icon-user"></span>Pesquisar Cliente</a>
                 </li>
                 <li>
-                    <a href="incluirPedido"><span class="icon-edit-sign"></span>Fazer Pedido</a>
+                    <a href="/incluirPedido"><span class="icon-edit-sign"></span>Fazer Pedido</a>
                 </li>
                 <li>
-                    <a href="associarComanda"><span class="icon-ticket"></span>Associar Comandas</a>
+                    <a href="/associarComanda"><span class="icon-ticket"></span>Associar Comandas</a>
                 </li>
                 <li>
-                    <a href="carregarComanda"><span class="icon-barcode"></span>Carregar Comanda</a>
+                    <a href="/carregarComanda"><span class="icon-barcode"></span>Carregar Comanda</a>
                 </li>
                 <li>
-                    <a href="fecharComanda"><span class="icon-dollar"></span>Fechar Comanda</a>
+                    <a href="/fecharComanda"><span class="icon-dollar"></span>Fechar Comanda</a>
                 </li>
                 
                 

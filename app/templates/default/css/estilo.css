@@ -2,3 +2,25 @@
   text-shadow: 5px 5px 5px #333; color:#363636;
   font-size: 25px;
 }
+.btn_editar:before{
+	 font-family: 'FontAwesome';
+	 content: "\f044";
+	 background: #5571ff;
+	 border:1px solid #1b339d;
+	 color:#fff;
+	 padding:10px;
+	 transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+}
+.btn_editar:hover:before{
+	background: #2e54ff;
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+}
+.margin-defaul-table{
+	margin:15px;
+}
+.editar-funcionario input,.editar-funcionario select {
+	margin-bottom: 15px;
+	margin-left: 10px;
+}

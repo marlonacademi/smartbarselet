@@ -19,9 +19,9 @@
 					'cpfFuncionario' => $data['Cpf']
 				);
 
-			$this->_db->insert('funcionario',$funcionario);
+				$this->_db->insert('funcionario',$funcionario);
 
-			$login = array(
+				$login = array(
 					'login' => $data['login'],
 					'senha' => md5($data['senha']),
 					'data_login' => date("Y-m-d H:i:s"),
@@ -36,6 +36,13 @@
 				return 0;
 			}
 
+		}
+
+		public function getFuncionarios(){
+			return $this->_db->select("SELECT * FROM funcionario");
+		}
+		public function getFuncionario($id){
+			return $this->_db->select("SELECT * FROM funcionario f LEFT JOIN login l ON (f.idFuncionario = l.idFuncionario) WHERE f.idFuncionario = '" . $id . "'")[0];
 		}
 	}
  ?>
